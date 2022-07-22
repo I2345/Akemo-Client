@@ -9,3 +9,8 @@ Right now Akemo needs a Third Party software to run! However we would like to li
 
 Yes Akemo is 100% safe however! You can get banned from roblox games due to Akemo being classed as an "exploit" but we will aim to try and get akemo whitelisted from 
 anti-cheats and maybe even having full blown support for games!
+
+# Discord Server?
+
+Akemo's Offical Discord Server is here!
+https://discord.gg/fcrzftZjMP
