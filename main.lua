@@ -1,4 +1,3 @@
-
 --// Akemo Client \\--
 
 local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/fluxlib.txt")()
@@ -9,6 +8,7 @@ local Privacy = win:Tab("Privacy", "http://www.roblox.com/asset/?id=6023426915")
 local World = win:Tab("World", "http://www.roblox.com/asset/?id=6023426915")
 local Client = win:Tab("Client", "http://www.roblox.com/asset/?id=6023426915")
 local Info = win:Tab("Info", "http://www.roblox.com/asset/?id=6023426915")
+local Updates = win:Tab("Update Logs", "http://www.roblox.com/asset/?id=6023426915")
 
 --// TOS \\--
 
@@ -29,7 +29,7 @@ end)
 
 --// World \\--
 
-World:Slider("Change Brightness", "Changes the brightness of the screen", 0, 2, game:GetService("Lighting").Brightness, function(x)
+World:Slider("Change Brightness", "Changes the brightness of the screen", 0, 5, game:GetService("Lighting").Brightness, function(x)
     game:GetService("Lighting").Brightness = x
 end)
 
@@ -51,6 +51,10 @@ World:Button("Remove Others Clothes and Hats", "Removes all features of other pl
     end
 end)
 
+World:Button("Remove Sky box", "Removes sky box", function()
+    game:GetService("Lighting"):FindFirstChildWhichIsA("Sky"):Destroy()
+end)
+
 --// Client \\--
 
 Client:Button("Anti-AFK", "This will automatically do inputs for you!", function()
@@ -64,6 +68,15 @@ end)
 --// Infomation \\--
 
 Info:Label("Made by Kasma#1625")
-Info:Label("v0.1.0")
+Info:Label("v0.1.1")
 Info:Label("Right Shift to close UI")
-Info:Label("Discord Coming soon!")
+Info:Label("Server: https://discord.gg/fcrzftZjMP")
+
+--// Updates \\--
+
+Updates:Label("v0.1.1")
+Updates:Label("- Added -")
+Updates:Label("Update tab")
+Updates:Label("Brightness goes up to 5 not 2")
+Updates:Label("Remove Skybox feature")
+Updates:Label("Discord Server")
